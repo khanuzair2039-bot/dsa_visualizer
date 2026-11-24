@@ -4,8 +4,6 @@ An interactive web app that visualizes how common sorting and searching algorith
 
 **Live Demo:** https://khanuzair2039-bot.github.io/dsa_visualizer/
 
-![Screenshot](screenshot.png)
-
 ## Features
 
 - Visualizes sorting algorithms: Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort
@@ -14,8 +12,6 @@ An interactive web app that visualizes how common sorting and searching algorith
 - Highlights comparisons and swaps in real time
 - Shows time and space complexity of the selected algorithm
 - Responsive design for desktop and mobile
-
-> Edit this list so it matches exactly what your project does.
 
 ## Tech Stack
 
