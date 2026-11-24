@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSA Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>DSA Visualizer</h1>
+    <p>Watch sorting and searching algorithms work, step by step</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label>Algorithm
+        <select id="algo">
+          <optgroup label="Sorting">
+            <option value="bubble">Bubble Sort</option>
+            <option value="selection">Selection Sort</option>
+            <option value="insertion">Insertion Sort</option>
+            <option value="merge">Merge Sort</option>
+            <option value="quick">Quick Sort</option>
+          </optgroup>
+          <optgroup label="Searching">
+            <option value="linear">Linear Search</option>
+            <option value="binary">Binary Search</option>
+          </optgroup>
+        </select>
+      </label>
+
+      <label>Array size
+        <input type="range" id="size" min="5" max="80" value="30">
+      </label>
+
+      <label>Speed
+        <input type="range" id="speed" min="1" max="100" value="60">
+      </label>
+
+      <label id="targetWrap" class="hidden">Target
+        <input type="number" id="target" min="1" max="100" value="50">
+      </label>
+
+      <div class="buttons">
+        <button id="generate">New Array</button>
+        <button id="start" class="primary">Start</button>
+        <button id="stop" disabled>Stop</button>
+      </div>
+    </section>
+
+    <section class="info">
+      <div id="status">Ready. Pick an algorithm and press Start.</div>
+      <div id="complexity"></div>
+    </section>
+
+    <section id="bars" class="bars" aria-label="Array visualization"></section>
+
+    <section class="legend">
+      <span><i class="dot d-bar"></i>Unsorted</span>
+      <span><i class="dot d-compare"></i>Comparing</span>
+      <span><i class="dot d-swap"></i>Swap / Write</span>
+      <span><i class="dot d-pivot"></i>Pivot</span>
+      <span><i class="dot d-sorted"></i>Sorted</span>
+      <span><i class="dot d-found"></i>Found</span>
+    </section>
+  </main>
+
+  <footer>
+    Built by Mohd Uzair ·
+    <a href="https://github.com/khanuzair2039-bot" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
